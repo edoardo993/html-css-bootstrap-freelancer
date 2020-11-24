@@ -190,7 +190,9 @@ footer {
   line-height: 80px
 }
 
-
+.download-button button {
+  font-size: 10px
+}
 
 .icons .fa {
   font-size: 20px;
@@ -278,5 +280,9 @@ footer {
     color: #2C3E50;
     font-size: 20px;
     line-height: 1
+  }
+
+  .download-button button {
+    font-size: 20px
   }
 }

@@ -1,41 +1,64 @@
 /* utility classes */
-.fa {
-  font-size: 30px
-}
-
-h1 {
-  font-size: 60px;
+.main-title {
+  font-size: 30px;
   color: #fff
 }
 
-h2 {
-  text-transform: uppercase;
-  font-size: 55px
+.second-title {
+  font-size: 25px
+}
+
+.third-title, .fa {
+  font-size: 20px
 }
 
 .star:before,
 .star:after {
   content: "";
-  position: relative;
+  vertical-align: middle;
   display: inline-block;
-  width: 120px;
-  height: 3px
-}
-/* end utility classes */
-
-.nav-bar {
-  height: 80px;
-  background: #2F3E4E
+  width: 50px;
+  height: 4px;
+  border-radius: 5px
 }
 
-.my-jumbotron {
+.bg-clr-grn {
   background: #57B99D;
   text-align: center;
   padding: 30px 0
 }
+/* end utility classes */
+
+.ep-navbar {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+.ep-navbar .navbar-brand, .ep-navbar .navbar-nav>li>a {
+  color: #fff;
+}
+
+.ep-navbar .navbar-brand {
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.ep-navbar .navbar-nav>li>a {
+  font-weight: bolder;
+}
+
+.ep-navbar .navbar-brand:hover, .ep-navbar .navbar-nav>li>a:hover {
+  color: #57B99D;
+}
+
+.navbar {
+  border: none;
+  border-radius: 0;
+  margin: 0
+}
 
 img {
-  height: 220px
+  height: 180px
 }
 
 .star.w-star:before,
@@ -50,12 +73,7 @@ img {
 
 .fa-star {
   vertical-align: middle;
-  padding: 0 30px
-}
-
-.contact-me div:first-child,
-.about div:first-child {
-  /* margin: 5px 0 */
+  padding: 0 8px
 }
 
 /* imposto il colore bianco alle fontawesome del jumbotron e di about */
@@ -67,8 +85,7 @@ img {
 
 .my-jumbotron p {
   color: #fff;
-  text-transform: uppercase;
-  font-size: 25px
+  font-size: 15px
 }
 
 .container {
@@ -90,23 +107,19 @@ img {
 }
 
 .portfolio img {
-  border-radius: 5px;
-}
-
-.about {
-  background: #57B99D;
-  text-align: center;
-  padding: 30px 0
+  border-radius: 30px;
+  padding: 15px 20px
 }
 
 .about h2 {
   color: #fff
 }
 
-.about p {
+.row.bg-clr-grn p {
   text-align: left;
   color: #fff;
-  font-size: 20px
+  font-size: 12px;
+  padding: 0 100px
 }
 
 .download {
@@ -119,6 +132,26 @@ img {
   border: 1px solid #fff
 }
 
+.ep-form input {
+  box-shadow: none;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0
+}
+
+.ep-form ::placeholder,
+.ep-form input,
+.ep-form textarea {
+  color: #2C3E50;
+  font-size: 15px;
+  line-height: 1.5
+}
+
+.ep-form {
+  margin: 0 auto;
+  width: 250px
+}
+
 .container .btn-success {
   text-align: left;
   margin: 10px 0
@@ -126,11 +159,6 @@ img {
 
 footer {
   background: #3F546B
-}
-
-h3 {
-  text-transform: uppercase;
-  font-size: 20px
 }
 
 .first-part-footer {
@@ -157,4 +185,62 @@ h3 {
   width: 40px;
   height: 40px;
   margin-right: 10px
+}
+
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 55px
+  }
+
+  .my-jumbotron p {
+    font-size: 25px
+  }
+
+  .row.bg-clr-grn p {
+    font-size: 20px;
+  }
+
+  .ep-navbar .navbar-brand {
+    font-size: 25px;
+    font-weight: bolder;
+  }
+
+  .ep-form ::placeholder,
+  .ep-form input,
+  .ep-form textarea {
+    color: #2C3E50;
+    font-size: 19px;
+    line-height: 2.5
+  }
+
+  .ep-form {
+    margin: 0 auto;
+    width: 600px
+  }
+
+  .star:before,
+  .star:after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 3px
+  }
+
+  .fa {
+    font-size: 30px
+  }
+
+  .fa-star {
+    vertical-align: middle;
+    padding: 0 30px
+  }
+
+  form {
+    padding: 0
+  }
 }

@@ -148,11 +148,10 @@ img {
 }
 
 .ep-form ::placeholder,
-.ep-form input,
 .ep-form textarea {
   color: #2C3E50;
-  font-size: 15px;
-  line-height: 1.5
+  font-size: 20px;
+  line-height: 1
 }
 
 .ep-form {
@@ -205,35 +204,6 @@ footer {
 }
 
 @media screen and (min-width: 992px) {
-  h1 {
-    font-size: 60px;
-  }
-
-  h2 {
-    font-size: 55px
-  }
-
-  .my-jumbotron p {
-    font-size: 25px
-  }
-
-  .row.bg-clr-grn p {
-    font-size: 20px;
-  }
-
-  .ep-navbar .navbar-brand {
-    font-size: 25px;
-    font-weight: bolder;
-  }
-
-  .ep-form ::placeholder,
-  .ep-form input,
-  .ep-form textarea {
-    color: #2C3E50;
-    font-size: 19px;
-    line-height: 2.5
-  }
-
   .ep-form {
     margin: 0 auto;
     width: 600px
@@ -248,19 +218,6 @@ footer {
     height: 3px
   }
 
-  .fa {
-    font-size: 30px
-  }
-
-  .fa-star {
-    vertical-align: middle;
-    padding: 0 30px
-  }
-
-  form {
-    padding: 0
-  }
-
   .row.bg-clr-grn p {
     text-align: left;
     color: #fff;
@@ -272,14 +229,6 @@ footer {
     border-radius: 20px;
     padding-right: 0;
     padding-left: 0
-  }
-
-  .ep-form ::placeholder,
-  .ep-form input,
-  .ep-form textarea {
-    color: #2C3E50;
-    font-size: 20px;
-    line-height: 1
   }
 
   .download-button button {

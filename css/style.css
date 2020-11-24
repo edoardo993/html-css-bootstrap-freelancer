@@ -26,6 +26,10 @@
   margin-bottom: 20px
 }
 
+.mg-t-b {
+  margin: 20px 0
+}
+
 .bg-clr-grn {
   background: #57B99D;
   text-align: center;
@@ -119,10 +123,6 @@ img {
   color: #fff
 }
 
-.about {
-  margin-bottom: 20px
-}
-
 .row.bg-clr-grn p {
   text-align: left;
   color: #fff;
@@ -130,11 +130,11 @@ img {
   padding: 0 100px
 }
 
-.download {
+.download-button {
   margin: 40px 0
 }
 
-.download .transparent {
+.download-button .transparent {
   background: none;
   color: #fff;
   border: 1px solid #fff
@@ -190,9 +190,7 @@ footer {
   line-height: 80px
 }
 
-.icons {
-  margin: 20px 0
-}
+
 
 .icons .fa {
   font-size: 20px;
@@ -272,5 +270,13 @@ footer {
     border-radius: 20px;
     padding-right: 0;
     padding-left: 0
+  }
+
+  .ep-form ::placeholder,
+  .ep-form input,
+  .ep-form textarea {
+    color: #2C3E50;
+    font-size: 20px;
+    line-height: 1
   }
 }

@@ -8,7 +8,7 @@
   font-size: 25px
 }
 
-.third-title, .fa {
+.third-title, .fa, .fourth-title {
   font-size: 20px
 }
 
@@ -35,8 +35,31 @@
   text-align: center;
   padding: 30px 0
 }
+
+.bg-clr-bl {
+  background: #3F546B
+}
+
+.ep-show-sm {
+  display: none
+}
+
+.pddg-dx-sx {
+  padding: 0 30px
+}
+
+.star.w-star:before,
+.star.w-star:after {
+  background: #fff
+}
+
+.star.b-star:before,
+.star.b-star:after {
+  background: #000
+}
 /* end utility classes */
 
+/* navbar */
 .ep-navbar {
   background-color: #2c3e50;
   color: #fff;
@@ -69,22 +92,12 @@ img {
   height: 180px
 }
 
-.star.w-star:before,
-.star.w-star:after {
-  background: #fff
-}
-
-.star.b-star:before,
-.star.b-star:after {
-  background: #000
-}
-
 .fa-star {
   vertical-align: middle;
   padding: 0 8px
 }
 
-/* imposto il colore bianco alle fontawesome del jumbotron e di about */
+/* jumbotron */
 .my-jumbotron .fa,
 .about .fa {
   color: #fff;
@@ -100,6 +113,7 @@ img {
   text-align: center;
 }
 
+/* portfolio */
 .portfolio {
   padding: 40px 0
 }
@@ -119,6 +133,7 @@ img {
   padding: 15px 15px
 }
 
+/* about */
 .about h2 {
   color: #fff
 }
@@ -140,7 +155,9 @@ img {
   border: 1px solid #fff
 }
 
-.ep-form input {
+/* form */
+.ep-form input,
+.form-group textarea {
   box-shadow: none;
   border: 0;
   border-bottom: 1px solid #ccc;
@@ -168,20 +185,17 @@ img {
   margin: 10px 0
 }
 
-footer {
-  background: #3F546B
-}
-
+/* footer */
 .upper-footer {
   color: #fff
 }
 
 .upper-footer span,
 .lower-footer .fa-copyright {
-  font-size: 13px
+  font-size: 16px
 }
 
-.lower-footer .row {
+.lower-footer  {
   background: #2F3E4E;
   height: 80px;
   text-align: center;
@@ -203,10 +217,35 @@ footer {
   margin: 0 5px
 }
 
-@media screen and (min-width: 992px) {
+/* mediaquery */
+@media screen and (min-width: 768px) {
+  .main-title {
+    font-size: 60px
+  }
+
+  .second-title {
+    font-size: 55px
+  }
+
+  .third-title {
+    font-size: 45px
+  }
+
+  .my-jumbotron p {
+    font-size: 25px
+  }
+
   .ep-form {
     margin: 0 auto;
     width: 600px
+  }
+
+  .no-show-sm {
+    display: none
+  }
+
+  .ep-show-sm {
+    display: block
   }
 
   .star:before,
@@ -233,5 +272,17 @@ footer {
 
   .download-button button {
     font-size: 20px
+  }
+
+  .pddg-dx-sx {
+    padding: 0 80px
+  }
+
+  .mg-t-b {
+    margin: 40px 0
+  }
+
+  .upper-footer span {
+    font-size: 18px
   }
 }
